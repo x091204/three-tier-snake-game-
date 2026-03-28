@@ -8,16 +8,16 @@ A fully functional Snake Game built as a production-ready three-tier application
 
 ```
                         ┌─────────────────────────────────────┐
-                        │         Kubernetes Cluster           │
-                        │         Namespace: three-tier-dev    │
-                        │                                      │
+                        │         Kubernetes Cluster          │
+                        │         Namespace: three-tier-dev   │
+                        │                                     │
   Browser ──► Ingress ──►  frontend-svc  ──►  frontend pod    │
-              (80 / api)                                       │
+              (80 / api)                                      │
                         │  backend-svc   ──►  backend pod(x2) │
-                        │                        │             │
-                        │  mongodb-svc   ──►  mongodb pod      │
-                        │                        │             │
-                        │                     PVC (1Gi)        │
+                        │                        │            │
+                        │  mongodb-svc   ──►  mongodb pod     │
+                        │                        │            │
+                        │                     PVC (1Gi)       │
                         └─────────────────────────────────────┘
 ```
 
